@@ -1,5 +1,5 @@
 name: My variables
-on: worflow_dispatch
+on: workflow_dispatch
 permissions: read-all
 env:
   MY_VARIABLE: Hello, GitHub Actions!
