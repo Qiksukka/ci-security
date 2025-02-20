@@ -1,8 +1,8 @@
 name: My variables
 on: worflow_dispatch
+permissions: read-all
 env:
   MY_VARIABLE: Hello, GitHub Actions!
-
 jobs:
   var-greeting:
     runs-on: ubuntu-latest
@@ -10,4 +10,5 @@ jobs:
       SECRET: ${{ secrets.DEMO_SECRET}}
     steps:
       - name: Print vars
-        run: echo "$MY_VARIABLE. Secret var: $DEMO_SECRET"
+        run: echo "$DEMO_SECRET"
+             
