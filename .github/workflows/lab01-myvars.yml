@@ -10,5 +10,6 @@ jobs:
       SECRET: ${{ secrets.DEMO_SECRET}}
     steps:
       - name: Print vars
-        run: echo "$DEMO_SECRET"
-             
+        run: |
+          echo "$DEMO_SECRET"
+          echo "$MY_VARIABLE"
