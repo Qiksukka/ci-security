@@ -1,5 +1,6 @@
 name: Hello World!
 run-name: ${{ github.actor}} is saying hello to the github actions.
+permissions: read-all
 on:
   workflow_dispatch:
 jobs:
