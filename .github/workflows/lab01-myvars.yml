@@ -1,0 +1,12 @@
+name: My variables
+on: worflow_dispatch
+env:
+  MY_VARIABLE: Hello, GitHub Actions!
+  SECRET: ${{ secrets.DEMO_SECRET}}
+
+jobs:
+  var-greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print vars
+        run: echo "$MY_VARIABLE. Secret var: $SECRET"
